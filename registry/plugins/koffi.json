@@ -5,7 +5,11 @@
   "description": "Koffi, the tiny suitcase mascot, lives on your boarding pass — strolling, rolling, collecting stickers, and getting more excited the closer your trip gets.",
   "repo": "mauriceboe/trek-plugin-koffi",
   "homepage": "https://github.com/mauriceboe/trek-plugin-koffi",
-  "tags": ["widget", "mascot", "fun"],
+  "tags": [
+    "widget",
+    "mascot",
+    "fun"
+  ],
   "type": "widget",
   "versions": [
     {
@@ -21,5 +25,7 @@
       "nativeModules": false,
       "publishedAt": "2026-07-03T00:00:00Z"
     }
-  ]
+  ],
+  "reviewedAt": "2026-07-03",
+  "boundOwner": "mauriceboe"
 }
