@@ -44,10 +44,12 @@ opening a pull request.
    npx trek-plugin validate
    ```
 
-4. **Open a PR** adding `registry/plugins/<your-id>.json`. Do **not** touch
-   `dist/` — it is generated. See [`schema/example-entry.json`](./schema/example-entry.json)
-   for the exact shape and [`schema/plugin-entry.schema.json`](./schema/plugin-entry.schema.json)
-   for the full schema.
+4. **Fork this repo, then open a PR** adding `registry/plugins/<your-id>.json`.
+   You don't have write access here, so add your entry in your fork and open the
+   pull request from it. Do **not** touch `dist/` — it is generated. See
+   [`schema/example-entry.json`](./schema/example-entry.json) for the exact shape
+   and [`schema/plugin-entry.schema.json`](./schema/plugin-entry.schema.json) for
+   the full schema.
 
 ## What CI checks (each is a hard gate)
 
