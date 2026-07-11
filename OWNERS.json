@@ -45,6 +45,11 @@
       "boundOwner": "jubnl",
       "repo": "jubnl/trek-gotify",
       "firstReviewedAt": "2026-07-11"
+    },
+    "trip-todos": {
+      "boundOwner": "mauriceboe",
+      "repo": "mauriceboe/trek-plugin-trip-todos",
+      "firstReviewedAt": "2026-07-11"
     }
   }
 }
