@@ -61,10 +61,27 @@ and [Publishing a Plugin](https://github.com/mauriceboe/TREK/wiki/Plugin-Publish
 **Entry** (`scripts/validate-entry.mjs`): JSON schema · `id` matches filename and
 is a valid slug · **owner/repo binding** (an existing plugin id can't be repointed
 to a different owner) · homoglyph / mixed-script names blocked · release tag exists ·
-manifest parity (`id`/`version`/`type`/`apiVersion` match) · **SHA-256 of the
-downloaded artifact matches the pin** · **no native `.node` binaries** (forbidden in
-v1) · `egress[]` present and non-wildcard when `http:outbound` is declared · an
-optional author signature (Ed25519 / minisign) is verified when present.
+manifest parity (`id`/`version`/`type`/`apiVersion`/`operatorEgress` match) · **SHA-256
+of the downloaded artifact matches the pin** · **no native `.node` binaries** (forbidden
+in v1) · `egress[]` present and non-wildcard when `http:outbound` is declared (an empty
+`egress[]` is allowed only with `operatorEgress: true` — see below).
+
+An author signature (`signature` + `authorPublicKey`) may be supplied and is carried in
+the index, but **CI does not verify it** — TREK pins the key on first install (TOFU) and
+checks it client-side.
+
+### `operatorEgress`
+
+If your plugin talks to a **self-hosted** service whose hostname you can't know at publish
+time (a Gotify, an ntfy), its manifest sets `"operatorEgress": true` and an admin adds the
+real hosts *after* installing. Because that means the `egress[]` list is **not** the
+plugin's full network reach, the flag is mirrored onto the entry version and CI checks the
+two agree — an entry can never understate what the code at the pinned commit can reach.
+`trek-plugin-sdk entry` emits it for you; it is simply absent for ordinary plugins.
+
+It is also the **only** way to declare `http:outbound` with an empty `egress[]` — for a plugin
+whose target is *always* self-hosted, so there is no host to name. That is not an allow-all:
+TREK blocks every outbound call until an admin adds a host.
 
 **README** (`scripts/check-readme.mjs`): a `README.md` exists · has the required
 sections (*What it does / Screenshots / Permissions / Setup*) · contains **at least
