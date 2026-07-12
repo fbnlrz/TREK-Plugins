@@ -72,8 +72,8 @@ in v1) · `egress[]` present and non-wildcard when `http:outbound` is declared (
 Signing is **optional**. An unsigned plugin installs on its SHA-256 pin alone, exactly as
 before — the pin proves the bytes are what the *registry* vouches for. A signature proves
 they came from the *author*, so a compromised registry cannot ship code under your name
-without also stealing your key. Sign with `npx trek-plugin-sdk publish --sign` (or `keygen`
-+ `entry --sign`), which emits a per-version `signature` and the entry's `authorPublicKey`.
+without also stealing your key. Sign with `npx trek-plugin-sdk publish --sign` (or `keygen` + `entry --sign`), 
+which emits a per-version `signature` and the entry's `authorPublicKey`.
 
 If you supply them, **CI verifies them** — it is not merely carrying them through to the
 index:
