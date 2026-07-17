@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-07-16T18:09:18.313Z",
+  "generatedAt": "2026-07-17T05:57:40.383Z",
   "plugins": [
     {
       "id": "budget-table",
@@ -28,7 +28,7 @@
       ],
       "reviewedAt": "2026-07-06",
       "boundOwner": "jubnl",
-      "downloadCount": 175
+      "downloadCount": 182
     },
     {
       "id": "flight-tracker",
@@ -56,7 +56,7 @@
       "authorPublicKey": "DJDfduAyHs2Ja/xhOyMkbCAcreMZZyKuz70PqTyfYM0=",
       "reviewedAt": "2026-07-16",
       "boundOwner": "fbnlrz",
-      "downloadCount": 32
+      "downloadCount": 81
     },
     {
       "id": "koffi",
@@ -101,7 +101,7 @@
       ],
       "reviewedAt": "2026-07-04",
       "boundOwner": "mauriceboe",
-      "downloadCount": 221
+      "downloadCount": 224
     },
     {
       "id": "nihongo-nugget",
@@ -127,7 +127,7 @@
       "homepage": "https://github.com/fbnlrz/nihongo-nugget",
       "reviewedAt": "2026-07-05",
       "boundOwner": "fbnlrz",
-      "downloadCount": 67
+      "downloadCount": 68
     },
     {
       "id": "suica-saver",
@@ -155,7 +155,7 @@
       "authorPublicKey": "kdvtL1DEM+p49J1eVKTwDl//BFzRFJcOtkDoc0Ay2bM=",
       "reviewedAt": "2026-07-06",
       "boundOwner": "fbnlrz",
-      "downloadCount": 54
+      "downloadCount": 57
     },
     {
       "id": "trek-gotify",
@@ -184,7 +184,7 @@
       "authorPublicKey": "YgFVo9ES55xz9m0/0Thh5sgx/IlVaaU2r0hScEawgiA=",
       "reviewedAt": "2026-07-11",
       "boundOwner": "jubnl",
-      "downloadCount": 28
+      "downloadCount": 29
     },
     {
       "id": "trek-x-japan",
@@ -222,7 +222,7 @@
       "homepage": "https://github.com/fbnlrz/trek-x-japan",
       "reviewedAt": "2026-07-07",
       "boundOwner": "fbnlrz",
-      "downloadCount": 158
+      "downloadCount": 163
     },
     {
       "id": "trekichiki",
@@ -284,7 +284,7 @@
       "homepage": "https://github.com/fbnlrz/trekichiki",
       "reviewedAt": "2026-07-07",
       "boundOwner": "fbnlrz",
-      "downloadCount": 83
+      "downloadCount": 85
     },
     {
       "id": "trip-todos",
@@ -312,7 +312,7 @@
       "authorPublicKey": "4QeCOm8gMfcoZdjIznao2KV10NSS7u/0AYn+6FA6/Oo=",
       "reviewedAt": "2026-07-11",
       "boundOwner": "mauriceboe",
-      "downloadCount": 148
+      "downloadCount": 155
     },
     {
       "id": "wiki-place-context",
@@ -338,7 +338,7 @@
       "homepage": "https://github.com/raduwolf12/wiki-place-context",
       "reviewedAt": "2026-07-10",
       "boundOwner": "raduwolf12",
-      "downloadCount": 216
+      "downloadCount": 233
     }
   ]
 }
